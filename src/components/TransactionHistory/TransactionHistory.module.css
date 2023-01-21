@@ -1,0 +1,22 @@
+.transactionHistory {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 30px;
+}
+
+.tableRow:nth-child(2n) {
+    background-color: rgb(215, 214, 214);
+}
+.tableHead {
+width: 280px;
+height: 40px;
+background-color: rgb(215, 214, 214);
+}
+.tableData {
+width: 280px;
+height: 40px;
+}
+
+
