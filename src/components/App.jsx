@@ -2,6 +2,8 @@
 import Container from "./Container/Container";
 import Profile from "./Profile/Profile";
 import Statistics from "./Statistics/Statistics"
+import FriendList from "./FriendList/FriendList";
+import friends from "friendList.json";
 import data from "data.json";
 import user from 'user.json';
 export const App = () => {
@@ -15,9 +17,7 @@ export const App = () => {
   stats={user.stats}
       />
   <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data}
-      />
-
+  <FriendList friends={friends} />
   </Container>
   );
 };
