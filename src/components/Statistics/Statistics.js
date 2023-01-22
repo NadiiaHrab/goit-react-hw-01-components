@@ -10,8 +10,8 @@ function Statistics({ title, stats }) {
         <ul className={css.statList}>
           {stats.map(stat => (
             <li className={css.item} key={stat.id}>
-              <span class="label">{stat.label}</span> 
-              <span class="percentage">{stat.percentage}</span>
+              <span className={css.statLabel}>{stat.label}</span> 
+              <span className={css.statPercentage}>{stat.percentage}</span>
 
             </li>
           ))}
@@ -19,7 +19,6 @@ function Statistics({ title, stats }) {
 </section>
     )
 }
-
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(

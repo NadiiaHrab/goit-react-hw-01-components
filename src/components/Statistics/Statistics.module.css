@@ -1,9 +1,9 @@
 .statistics {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .title {
-    font-family: inherit;
+
     text-align: center;
     margin-bottom: 30px;
 }
@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
    
 }
 .item {
@@ -22,6 +21,18 @@
     justify-content: center;
     width: 90px;
     height: 60px;
-    background: #FFFFFF;
-    border: 2px solid #1E2C30;
+    background-color: rgb(244, 232, 211);
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid burlywood;
+}
+.statLabel {
+    font-weight: 500;
+    font-size: 18px;
+}
+.statPercentage {
+    font-weight: 500;
+    font-size: 16px;
 }
