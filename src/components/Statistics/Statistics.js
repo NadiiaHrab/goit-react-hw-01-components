@@ -4,9 +4,9 @@ import css from './Statistics.module.css';
 
 function Statistics({ title, stats }) {
     return (
-        <section className={css.statistics}>
-  <h2 className={css.title}>{title}</h2>
-
+      <section className={css.statistics}>
+        {title && <h2 className={css.title}>{title}</h2>}
+        
         <ul className={css.statList}>
           {stats.map(stat => (
             <li className={css.item} style={{ backgroundColor: getRandomHexColor() }} key={stat.id}>
@@ -27,6 +27,7 @@ function getRandomHexColor() {
 }
 
 Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
     id: PropTypes.string.isRequired,

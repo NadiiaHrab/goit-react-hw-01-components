@@ -1,0 +1,28 @@
+.item {
+    box-shadow: 2px 2px 2px 1px rgb(0 0 255 / 20%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+    height: 60px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.online {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: green;
+
+}
+
+.ofline {
+width: 18px;
+height: 18px;
+border-radius: 50%;
+background-color: brown;
+}

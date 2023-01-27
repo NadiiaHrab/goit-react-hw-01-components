@@ -9,6 +9,7 @@ import data from "data.json";
 import user from 'user.json';
 
 
+
 export const App = () => {
   return (
     <Container>
@@ -20,8 +21,11 @@ export const App = () => {
   avatar={user.avatar}
   stats={user.stats}
       />
+      
       <Statistics title="Upload stats" stats={data} />
+
       <FriendList friends={friends} />
+    
       <TransactionHistory items={transactions} />
       
   </Container>
